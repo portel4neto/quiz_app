@@ -9,14 +9,17 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          const SizedBox(
+            height: 80,
+          ),
           Image.asset(
-            'assets/images/quiz-logo.png',
-            width: 250,
+            'assets/images/cruzeiro-logo.png',
+            width: 280,
           ),
           const SizedBox(
             height: 80,
           ),
-          const Text('Learn flutter the fun way!',
+          const Text('A Simple Quiz For a Cruzeiro Fan!',
             style: TextStyle(
               fontSize: 20,
               color: Colors.white,
@@ -25,17 +28,28 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          ElevatedButton(
+          ElevatedButton.icon(
+            icon: Icon(
+              Icons.arrow_right_alt,
+              color: Colors.white,
+            ),
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.purple
+              backgroundColor: Color(0xFF2F529E)
             ),
             onPressed: () {},
-            child: Text('Start Quiz',
+            label: Text('Start Quiz',
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white
               ),
             )
+          ),
+          const SizedBox(
+            height: 80,
+          ),
+          Image.asset(
+            'assets/images/cruzeiro-raposa.png',
+            width: 60,
           )
         ],
       ),

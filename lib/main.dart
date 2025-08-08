@@ -10,9 +10,9 @@ void main() {
          decoration: BoxDecoration(
            gradient: LinearGradient(
              colors: [
-               Colors.deepPurple,
-               Colors.purple,
-               Colors.purpleAccent
+               const Color(0xFF2F529E),
+               const Color(0xFF175AA3),
+               const Color(0xFF007FFF)
              ],
              begin: Alignment.topLeft,
              end: Alignment.bottomRight,
